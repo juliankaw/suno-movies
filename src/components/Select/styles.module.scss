@@ -1,0 +1,45 @@
+.select {
+  appearance: none;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  text-align-last: center;
+  color: white;
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.875rem;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.customSelect {
+  width: 100%;
+  max-width: 11rem;
+  padding: 0.8rem 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background: linear-gradient(180deg, #212125 0%, #2e2e35 100%), #212125;
+  border: 2px solid #2e2d31;
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    left: 25px;
+    top: 15px;
+  }
+}
